@@ -1,3 +1,4 @@
+/*Master Styles*/
 body {
     margin: 0px;
 }
@@ -7,7 +8,8 @@ body {
     grid-template-columns: 1fr;
 }
 
-.nav-wrapper {
+/*nav Styles*/
+.nav-wrapper { 
     display: flex;
     justify-content: space-between;
     padding: 38px;
@@ -42,3 +44,5 @@ body {
 .nav-link-wrapper a {
     color: black;
 }
+
+/*Portfolio Styles*/
