@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap" rel="stylesheet">
     <link rel="Stylesheet" href="website.css">
 </head>
 <body>
     <div class="container">
         <div class="nav-wrapper">
             <div class="left-side">
-                <div class="nav-link-wrapper">
+                <div class="nav-link-wrapper active-nav-link">
                     <a href="Website.html">Home</a>
                 </div>
 
@@ -106,5 +107,21 @@
                 </div>
             </div>
         </div>
-    </body>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () =>{
+            console.log(portfolioItem.childNodes[1].classList);
+            portfolioItem.childNodes[1].classList.add('img-darken');
+            
+        })
+
+        portfolioItem.addEventListener('mouseout', () =>{
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        }) 
+
+    })
+</script>
 </html>
